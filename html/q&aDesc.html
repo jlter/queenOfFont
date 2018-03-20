@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我去问问</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/qaDesc.css">
+	</head>
+
+	<body>
+	<!--scroll盒子-->
+		<div class="mui-scroll-wrapper wrapper footCut-50">
+			<div class="mui-scroll">
+				<div class="content">
+					<div class="qa-group">
+						<div class="questions">
+							<img src="../icon/toolsIcon/qa-q.png" alt=""><span>请问有掉色的吗？如何处理？</span>
+						</div>
+						<p class="descTime">提问于 <span>3天前</span></p>
+						<div class="goods-answer">
+							<img src="../icon/toolsIcon/qa-a.png" alt="">
+							<div class="personMsg">
+								<span>王大锤</span>
+								<span class="personMsgTimes">三天前</span>
+							</div>
+							<span>洗了就会软趴趴,不建议洗,本身就是做旧的,感觉脏就最好了,喜滋滋老铁</span>
+						</div>
+						<div class="goods-answer">
+							<img src="../icon/toolsIcon/qa-a.png" alt="">
+							<div class="personMsg">
+								<span>王大锤</span>
+								<span class="personMsgTimes">三天前</span>
+							</div>
+							<span>洗了就会软趴趴,不建议洗,本身就是做旧的,感觉脏就最好了,喜滋滋老铁</span>
+						</div>
+						<div class="goods-answer">
+							<img src="../icon/toolsIcon/qa-a.png" alt="">
+							<div class="personMsg">
+								<span>王大锤</span>
+								<span class="personMsgTimes">三天前</span>
+							</div>
+							<span>洗了就会软趴趴,不建议洗,本身就是做旧的,感觉脏就最好了,喜滋滋老铁</span>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+			<div class="footerTools">
+				<div class="texts">
+					<input type="text" class="customInput">
+					<img src="../icon/toolsIcon/askButton.png" alt="" class="icon">
+				</div>
+			</div>
+		</div>
+		<script src="../js/jquery-3.2.0.min.js"></script>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/base.js"></script>
+		<script >
+			mui('body')
+				.on('tap','.goods-items',function () {
+				window.location.href = './orderDesc.html'
+            })
+				//点击取消订单
+				.on('tap','.cancelOrder',function () {
+                    mui.confirm('确认删除订单？', '我是女王', ['取消','确定'], function(e) {
+                        if (e.index == 1) {
+                          mui.toast('商品已删除')
+                        } else {
+
+                        }
+                    })
+                })
+				.on('tap','.logistics',function () {
+                    window.location.href = './logistics.html'
+                })
+                .on('tap','.comments',function () {
+                    window.location.href = './comment.html'
+                })
+				.on('tap','.tiktok',function () {
+					$(this).hide();
+					$(this).siblings('.box-for-goodsAnswer').show()
+                })
+		</script>
+	</body>
+
+</html>

@@ -61,6 +61,10 @@ mui('body')
 
         window.location.href = './goodsDesc.html'
     })
+        //qa跳转到详情页
+    .on('tap','.linkQaDesc',function () {
+        window.location.href='./q&aDesc.html'
+    })
     //空链接
     .on('tap','.linkLoadingSend,.linkToGoodsList,.linkDefaults',function () {
         mui.toast('正在建设中,敬请期待','我是女王')
