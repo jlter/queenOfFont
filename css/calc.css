@@ -1,0 +1,9 @@
+.footCut-40{
+    height: calc(100% - 40px);
+}
+.footCut-50{
+    height:calc(100% - 50px);
+}
+#slider{
+    width:calc(100% - 32px);
+}

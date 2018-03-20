@@ -1,0 +1,61 @@
+@import "../css/calc.css";
+.wrapper {
+  background: #fff;
+}
+ul {
+  margin-top: 0;
+  padding-left: 0;
+}
+ul li {
+  list-style: none;
+}
+i.queen {
+  width: 24px;
+  height: 24px;
+  font-size: 20px;
+  display: inline-block;
+  line-height: 24px;
+  text-align: center;
+}
+i.queen.big {
+  line-height: 30px;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+}
+i.queen.queen-webicon19 {
+  color: #ccc;
+}
+i.queen.queen-webicon19.active {
+  color: #ff4e53;
+}
+html,
+body {
+  font-family: "microsoft yahei";
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.mui-popup-button {
+  color: #916923 !important;
+}
+.wrapper {
+  background: #f2f0da;
+  font-size: 14px;
+}
+.wrapper .content .avator {
+  padding: 10px 16px;
+}
+.wrapper .content .avator img {
+  width: 100%;
+  display: block;
+}
+.wrapper .content .groupList {
+  margin-top: 10px;
+}
+.wrapper .content .groupList.mainTypes {
+  margin-top: 0;
+}
+.wrapper .content .groupList.mainTypes .mui-table-view-cell {
+  font-size: 14px;
+}

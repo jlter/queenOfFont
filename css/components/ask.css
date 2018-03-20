@@ -1,0 +1,111 @@
+@import "../css/calc.css";
+.wrapper {
+  background: #fff;
+}
+ul {
+  margin-top: 0;
+  padding-left: 0;
+}
+ul li {
+  list-style: none;
+}
+i.queen {
+  width: 24px;
+  height: 24px;
+  font-size: 20px;
+  display: inline-block;
+  line-height: 24px;
+  text-align: center;
+}
+i.queen.big {
+  line-height: 30px;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+}
+i.queen.queen-webicon19 {
+  color: #ccc;
+}
+i.queen.queen-webicon19.active {
+  color: #ff4e53;
+}
+html,
+body {
+  font-family: "microsoft yahei";
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.mui-popup-button {
+  color: #916923 !important;
+}
+.goods-items {
+  position: relative;
+}
+.goods-items .types {
+  position: absolute;
+  top: 0;
+  right: 16px;
+  color: #916923;
+  font-size: 12px;
+}
+.goods-items .goods-pricesList {
+  line-height: 56px;
+}
+.askContents {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.askContents .title {
+  padding: 0 16px 10px;
+  border-bottom: 1px solid #000;
+  display: flex;
+}
+.askContents .title .thumbs {
+  width: 60px;
+  height: 60px;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+.askContents .title .score {
+  display: flex;
+  flex-direction: column;
+  padding-left: 19px;
+}
+.askContents .title .score p {
+  color: #916923;
+  font-size: 16px;
+}
+.askContents .title .score .stars ul {
+  margin-bottom: 0;
+}
+.askContents .title .score .stars ul li {
+  display: inline-block;
+  padding-left: 15px;
+}
+.askContents .text-box {
+  padding: 16px;
+  overflow: hidden;
+  border-bottom: 1px solid #000;
+}
+.askContents .text-box textarea {
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 0;
+  width: 100%;
+  border: 0;
+  background: #f2f0da;
+  margin-bottom: 0;
+  float: left;
+  color: rgba(0, 0, 0, 0.5);
+}
+.askContents .images-group {
+  position: relative;
+  padding: 16px 16px 10px;
+}
+.askContents .images-group .release {
+  position: absolute;
+  top: 111px;
+  right: 16px;
+}

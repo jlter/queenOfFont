@@ -1,0 +1,289 @@
+@import "../css/calc.css";
+.wrapper {
+  background: #fff;
+}
+ul {
+  margin-top: 0;
+  padding-left: 0;
+}
+ul li {
+  list-style: none;
+}
+i.queen {
+  width: 24px;
+  height: 24px;
+  font-size: 20px;
+  display: inline-block;
+  line-height: 24px;
+  text-align: center;
+}
+i.queen.big {
+  line-height: 30px;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+}
+i.queen.queen-webicon19 {
+  color: #ccc;
+}
+i.queen.queen-webicon19.active {
+  color: #ff4e53;
+}
+html,
+body {
+  font-family: "microsoft yahei";
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.mui-popup-button {
+  color: #916923 !important;
+}
+.footerTools {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  background: #f2f0da;
+}
+.footerTools ul {
+  width: 100%;
+  height: 40px;
+}
+.footerTools ul li {
+  position: relative;
+  font-size: 0;
+  width: 20%;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+}
+.footerTools ul li .logo {
+  position: absolute;
+  bottom: 0px;
+  top: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+}
+.footerTools .texts {
+  display: flex;
+  padding: 11px 16px;
+  height: 50px;
+  background: #fff;
+}
+.footerTools .texts input {
+  border-radius: 50px;
+  height: 28px;
+  background: #e6e6e6;
+}
+.footerTools .texts .icon {
+  flex: 60px 0 0 ;
+  margin-left: 10px;
+}
+.wrapper {
+  bottom: 40px;
+}
+.list {
+  margin-bottom: 0;
+}
+.list .listItem {
+  width: 100%;
+  box-sizing: border-box;
+  background: #f4f0e9;
+  margin-bottom: 15px;
+  font-size: 0;
+}
+.list .listItem:last-of-type {
+  margin-bottom: 0;
+}
+.list .listItem .title {
+  overflow: hidden;
+  line-height: 30px;
+  padding: 4px 16px;
+  font-size: 14px;
+  border-bottom: 1px solid #fff;
+}
+.list .listItem .title > * {
+  float: left;
+}
+.list .listItem .title > i {
+  margin-right: 10px;
+}
+.list .listItem .desc {
+  margin-left: 16px;
+  padding: 12px 0;
+  display: flex;
+  border-bottom: 1px solid #d9d9d9;
+}
+.list .listItem .desc:last-of-type {
+  border-bottom: none;
+}
+.list .listItem .desc .queenIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list .listItem .desc .queenIcon > i {
+  margin-right: 10px;
+}
+.list .listItem .desc .img {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  display: inline-block;
+  flex: 100px 0 0;
+  width: 100px;
+  height: 100px;
+  margin-right: 12px;
+  background: linear-gradient(to bottom, #333333 0%, #ff00ff 100%);
+}
+.list .listItem .desc .goods {
+  position: relative;
+  flex: 1;
+}
+.list .listItem .desc .goods .name {
+  line-height: 1.4;
+  font-size: 12px;
+}
+.list .listItem .desc .goods .styles {
+  line-height: 2;
+  font-size: 12px;
+  color: #888;
+}
+.list .listItem .desc .goods .styles span {
+  padding-left: 18px;
+}
+.list .listItem .desc .goods .styles span:first-of-type {
+  padding-left: 3px;
+}
+.list .listItem .desc .goods .num {
+  font-size: 0;
+  position: absolute;
+  width: 100%;
+  height: 24px;
+  bottom: 0px;
+}
+.list .listItem .desc .goods .num .money {
+  font-size: 14px;
+}
+.list .listItem .desc .goods .num .money::before {
+  content: '￥';
+  font-size: 20px;
+  color: #ff4e53;
+  font-weight: bold;
+}
+.list .listItem .desc .goods .num .right {
+  height: 24px;
+  float: right;
+  padding-right: 16px;
+}
+.list .listItem .desc .goods .num .right > i {
+  padding-left: 12px;
+}
+.list .listItem .desc .goods .num .right .inputs {
+  width: 80px;
+  height: 100%;
+  display: inline-block;
+  background: #fff;
+}
+.list .listItem .desc .goods .num .right .inputs .goodsNum {
+  width: 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 24px;
+  vertical-align: top;
+}
+.list .listItem .desc .goods .num .right .inputs i:last-of-type {
+  float: right;
+}
+.footer {
+  width: 100%;
+  height: 40px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+  background: #fff;
+  display: flex;
+  padding: 0;
+}
+.footer .inner {
+  flex: 1;
+  padding: 0 18px 0 16px;
+  display: flex;
+}
+.footer .inner .checkAll {
+  flex: 100px 0 0 ;
+  font-size: 12px;
+  line-height: 40px;
+}
+.footer .inner .checkAll > * {
+  float: left;
+}
+.footer .inner .checkAll > i {
+  line-height: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.footer .inner .showMoney {
+  float: right;
+  text-align: right;
+  flex: 1;
+  font-size: 0;
+}
+.footer .inner .showMoney .total {
+  line-height: 18px;
+  display: block;
+  font-size: 14px;
+}
+.footer .inner .showMoney .total span::before {
+  content: '￥';
+  color: #ff4e53;
+  font-size: 18px;
+}
+.footer .inner .showMoney .transportation {
+  line-height: 22px;
+  float: right;
+  padding-right: 10px;
+  display: block;
+  font-size: 12px;
+  color: #888888;
+}
+.footer .button {
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  flex: 80px 0 0;
+  background: #916923;
+}
+.buyCarZero .title {
+  letter-spacing: 1px;
+  text-align: center;
+  padding-top: 46px;
+  font-size: 16px;
+  color: #000;
+}
+.buyCarZero .title span {
+  display: block;
+  padding-top: 16px;
+  color: #888888;
+  font-size: 12px;
+}
+.buyCarZero > .btn {
+  font-size: 14px;
+  margin: 0 auto;
+  margin-top: 155px;
+  text-align: center;
+  width: 100px;
+  box-sizing: border-box;
+  color: #916923;
+  border-radius: 5px;
+  padding: 8px 16px;
+  border: 1px solid #916923;
+}
+.footerTools {
+  height: 40px;
+}

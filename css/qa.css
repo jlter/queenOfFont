@@ -1,0 +1,150 @@
+@import "../css/calc.css";
+@import "../css/calc.css";
+.wrapper {
+  background: #fff;
+}
+ul {
+  margin-top: 0;
+  padding-left: 0;
+}
+ul li {
+  list-style: none;
+}
+i.queen {
+  width: 24px;
+  height: 24px;
+  font-size: 20px;
+  display: inline-block;
+  line-height: 24px;
+  text-align: center;
+}
+i.queen.big {
+  line-height: 30px;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+}
+i.queen.queen-webicon19 {
+  color: #ccc;
+}
+i.queen.queen-webicon19.active {
+  color: #ff4e53;
+}
+html,
+body {
+  font-family: "microsoft yahei";
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.mui-popup-button {
+  color: #916923 !important;
+}
+.footerTools {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  background: #f2f0da;
+}
+.footerTools ul {
+  width: 100%;
+  height: 40px;
+}
+.footerTools ul li {
+  position: relative;
+  font-size: 0;
+  width: 20%;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+}
+.footerTools ul li .logo {
+  position: absolute;
+  bottom: 0px;
+  top: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+}
+.footerTools .texts {
+  display: flex;
+  padding: 11px 16px;
+  height: 50px;
+  background: #fff;
+}
+.footerTools .texts input {
+  border-radius: 50px;
+  height: 28px;
+  background: #e6e6e6;
+}
+.footerTools .texts .icon {
+  flex: 60px 0 0 ;
+  margin-left: 10px;
+}
+.wrapper {
+  background: #f2f0da;
+  font-size: 14px;
+}
+.wrapper .qa-items {
+  position: relative;
+  background: #fff;
+  padding: 15px 16px 10px;
+  margin-bottom: 10px;
+}
+.wrapper .qa-items:last-of-type {
+  margin-bottom: 0;
+}
+.wrapper .qa-items .questions {
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.wrapper .qa-items .questions img {
+  width: 30px;
+  height: 30px;
+  float: left;
+}
+.wrapper .qa-items .questions > span {
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  flex: 1;
+  padding-left: 8px;
+}
+.wrapper .qa-items .goods-answer img {
+  width: 30px;
+  height: 30px;
+  float: left;
+}
+.wrapper .qa-items .goods-answer > span {
+  padding: 8px 13px;
+  display: block;
+  margin-left: 40px;
+  background: #f4f0e9;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #333;
+}
+.wrapper .qa-items .goods-answer .times {
+  padding: 8px 16px;
+  text-align: right;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.wrapper .qa-items .tiktok {
+  position: absolute;
+  bottom: 12px;
+  left: 58px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  margin-bottom: 0;
+}
+.wrapper .qa-items .box-for-goodsAnswer {
+  display: none;
+}

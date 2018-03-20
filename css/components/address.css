@@ -1,0 +1,67 @@
+@import "../css/calc.css";
+.wrapper {
+  background: #fff;
+}
+ul {
+  margin-top: 0;
+  padding-left: 0;
+}
+ul li {
+  list-style: none;
+}
+i.queen {
+  width: 24px;
+  height: 24px;
+  font-size: 20px;
+  display: inline-block;
+  line-height: 24px;
+  text-align: center;
+}
+i.queen.big {
+  line-height: 30px;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+}
+i.queen.queen-webicon19 {
+  color: #ccc;
+}
+i.queen.queen-webicon19.active {
+  color: #ff4e53;
+}
+html,
+body {
+  font-family: "microsoft yahei";
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.mui-popup-button {
+  color: #916923 !important;
+}
+.address {
+  font-size: 14px;
+  padding: 6px 16px;
+  background: #fff;
+  margin-bottom: 1px;
+}
+.address > div {
+  margin-bottom: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.address > div > div:first-of-type {
+  display: flex;
+  flex: 1;
+}
+.address > div > div:first-of-type > span:first-of-type {
+  flex: 75px 0 0;
+}
+.address > div > div:first-of-type span {
+  text-align: justify;
+}
+.address > div.desc {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.7);
+}

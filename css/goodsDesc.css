@@ -1,0 +1,174 @@
+@import "../css/calc.css";
+.wrapper {
+  background: #fff;
+}
+ul {
+  margin-top: 0;
+  padding-left: 0;
+}
+ul li {
+  list-style: none;
+}
+i.queen {
+  width: 24px;
+  height: 24px;
+  font-size: 20px;
+  display: inline-block;
+  line-height: 24px;
+  text-align: center;
+}
+i.queen.big {
+  line-height: 30px;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+}
+i.queen.queen-webicon19 {
+  color: #ccc;
+}
+i.queen.queen-webicon19.active {
+  color: #ff4e53;
+}
+html,
+body {
+  font-family: "microsoft yahei";
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.mui-popup-button {
+  color: #916923 !important;
+}
+.comment-items {
+  font-size: 14px;
+  background: #fff;
+  padding: 10px 16px 0;
+}
+.comment-items .avatorGroup .avator {
+  border-radius: 50%;
+}
+.comment-items .avatorGroup .userName {
+  font-size: 16px;
+}
+.comment-items .types span {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  padding-right: 14px;
+}
+.comment-items .comment-mains .comment-text {
+  padding: 5px 0 5px;
+}
+.comment-items .comment-mains .comment-pices {
+  overflow: hidden;
+}
+.comment-items .comment-mains .comment-pices img {
+  float: left;
+  box-sizing: border-box;
+  width: 25%;
+  padding: 0 7px 5px;
+}
+.comment-items .checkGoods {
+  padding: 10px 0;
+  text-align: right;
+}
+.comment-items .checkGoods span {
+  color: #916923;
+  font-weight: bold;
+  font-size: 16px;
+  padding-left: 16px;
+}
+.wrapper {
+  background: #f2f0da;
+}
+.wrapper .goodsSlider {
+  width: 100%!important;
+}
+.wrapper .goodsTitle {
+  padding: 0 16px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  background: #fff;
+  line-height: 3;
+  margin-bottom: 1px;
+}
+.wrapper .prices .realPrice {
+  padding: 0 16px;
+  background: #fff;
+  display: block;
+  color: #ff4e53;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 2.5;
+  margin-bottom: 1px;
+}
+.wrapper .prices .realPrice::before {
+  content: '￥';
+}
+.wrapper .prices .otherGroup {
+  padding: 0 16px;
+  background: #fff;
+  overflow: hidden;
+}
+.wrapper .prices .otherGroup span {
+  display: inline-block;
+  line-height: 2;
+  width: 50%;
+  float: left;
+  font-size: 12px;
+  color: #d9d9d9;
+}
+.wrapper .types,
+.wrapper .props {
+  line-height: 2.5;
+  padding: 0 16px;
+  background: #fff;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.wrapper .desc {
+  margin-top: 10px;
+  background: #fff;
+  padding: 16px;
+  font-size: 14px;
+}
+.wrapper .desc::before {
+  content: '简介：';
+  display: block;
+}
+.wrapper .mini-comments {
+  margin-top: 10px;
+  background: #fff;
+  margin-bottom: 0;
+  padding: 5px 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .mini-comments .checkAll {
+  color: #916923;
+}
+.wrapper .questionGroup {
+  background: #fff;
+}
+.wrapper .questionGroup .questionItems {
+  padding: 5px 16px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.wrapper .questionGroup .questionItems span:first-of-type {
+  line-height: 24px;
+}
+.wrapper .questionGroup .questionItems span:first-of-type img {
+  float: left;
+  margin-right: 5px;
+}
+.wrapper .questionGroup .questionItems span:last-of-type {
+  color: rgba(0, 0, 0, 0.5);
+}
+.wrapper .goodsDesc-box {
+  width: 100%;
+}
+.wrapper .goodsDesc-box img {
+  width: 100%;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="../css/mui.min.css">
+    <link rel="stylesheet" href="../css/goodsDesc.css">
+</head>
+<body>
+    <div class="mui-scroll-wrapper wrapper">
+        <div class="mui-scroll">
+            <div class="content">
+                <div id="slider" class="mui-slider goodsSlider" >
+                    <div class="mui-slider-group mui-slider-loop">
+                        <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+                        <div class="mui-slider-item mui-slider-item-duplicate">
+                            <a href="#">
+                                <img src="../images/customServicesDemo/1512231636083.jpg">
+                            </a>
+                        </div>
+                        <!-- 第一张 -->
+                        <div class="mui-slider-item">
+                            <a href="#">
+                                <img src="../images/customServicesDemo/1515976502159.jpg">
+                            </a>
+                        </div>
+                        <!-- 第二张 -->
+                        <div class="mui-slider-item">
+                            <a href="#">
+                                <img src="../images/customServicesDemo/1512231636083.jpg">
+                            </a>
+                        </div>
+                        <!-- 第三张 -->
+                        <div class="mui-slider-item">
+                            <a href="#">
+                                <img src="../images/customServicesDemo/1515976502159.jpg">
+                            </a>
+                        </div>
+                        <!-- 第四张 -->
+                        <div class="mui-slider-item">
+                            <a href="#">
+                                <img src="../images/customServicesDemo/1512231636083.jpg">
+                            </a>
+                        </div>
+                        <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+                        <div class="mui-slider-item mui-slider-item-duplicate">
+                            <a href="#">
+                                <img src="../images/customServicesDemo/1515976502159.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mui-slider-indicator">
+                        <div class="mui-indicator mui-active"></div>
+                        <div class="mui-indicator"></div>
+                        <div class="mui-indicator"></div>
+                        <div class="mui-indicator"></div>
+                    </div>
+                </div>
+                <p class="goodsTitle">全球断货颜值之王·禁忌之吻口红 16 3.3g</p>
+                <div class="prices">
+                    <span class="realPrice">299</span>
+                   <div class="otherGroup">
+                       <span class="logistics">运费：20</span>
+                       <span class="saleV">销量：2437</span>
+                   </div>
+                </div>
+                <div class="types">选择：规格</div>
+                <div class="props">产品参数</div>
+                <div class="desc">
+                    说水水水水谁谁谁谁谁谁少时诵诗书是所所所所所所所所所所所所所所所所所所所所所所所所所所所
+                </div>
+                <!--评论区-->
+                <p class="mini-comments">
+                    <span class="head">宝贝评价(205)</span>
+                    <span class="checkAll linkAllComments">查看全部></span>
+                </p>
+                <ul class="comment-group">
+                    <li class="comment-items">
+                        <div class="avatorGroup">
+                            <img class="avator" src="../images/customServicesDemo/1512231636083.jpg" width="32" height="32" alt="">
+                            <span class="userName">江南烟雨</span>
+                        </div>
+                        <!--评论主体内容-->
+                        <div class="comment-mains">
+                            <div class="comment-text">
+                                梵蒂冈禁忌之吻变色唇膏16号,附加色。非常好，很满意！
+                            </div>
+                            <div class="comment-pices">
+                                <img src="../images/commentGoods/pic1.jpg" alt="">
+                                <img src="../images/commentGoods/pic1.jpg" alt="">
+                                <img src="../images/commentGoods/pic1.jpg" alt="">
+                                <img src="../images/commentGoods/pic1.jpg" alt="">
+                                <img src="../images/commentGoods/pic1.jpg" alt="">
+                                <img src="../images/commentGoods/pic1.jpg" alt="">
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+                <!--问大家-->
+                <p class="mini-comments">
+                    <span class="head">问大家(5)</span>
+                    <span class="checkAll linkQA">查看全部></span>
+                </p>
+                <ul class="questionGroup">
+                    <li class="questionItems linkQA">
+                        <span>
+                            <img src="../icon/toolsIcon/qa-q.png" width="24" height="24" alt="">
+                            请问有掉色的吗?如何处理?
+                        </span>
+                        <span>3个回答</span>
+                    </li>
+                    <li class="questionItems linkQA">
+                        <span>
+                            <img src="../icon/toolsIcon/qa-q.png" width="24" height="24" alt="">
+                            买了这个我能变身吗
+                        </span>
+                        <span>1个回答</span>
+                    </li>
+                    <li class="questionItems linkQA">
+                        <span>
+                            <img src="../icon/toolsIcon/qa-q.png" width="24" height="24" alt="">
+                            活着不好吗？
+                        </span>
+                        <span>12个回答</span>
+                    </li>
+                </ul>
+                <!--详情了-->
+                <div class="goodsDesc-box">
+                    <img src="../images/customServicesDemo/1515976502159.jpg" alt="">
+                    <img src="../images/customServicesDemo/1515976502159.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/mui.min.js"></script>
+    <script src="../js/base.js"></script>
+    <script src="../js/notPullTop.js"></script>
+    <script src="../js/linkAttr.js"></script>
+    <script>
+        var slider = mui('#slider')
+        slider.slider({
+            interval: 0
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+@import "../css/calc.css";
+.wrapper {
+  background: #fff;
+}
+ul {
+  margin-top: 0;
+  padding-left: 0;
+}
+ul li {
+  list-style: none;
+}
+i.queen {
+  width: 24px;
+  height: 24px;
+  font-size: 20px;
+  display: inline-block;
+  line-height: 24px;
+  text-align: center;
+}
+i.queen.big {
+  line-height: 30px;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+}
+i.queen.queen-webicon19 {
+  color: #ccc;
+}
+i.queen.queen-webicon19.active {
+  color: #ff4e53;
+}
+html,
+body {
+  font-family: "microsoft yahei";
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.mui-popup-button {
+  color: #916923 !important;
+}
+.footerTools {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  background: #f2f0da;
+}
+.footerTools ul {
+  width: 100%;
+  height: 40px;
+}
+.footerTools ul li {
+  position: relative;
+  font-size: 0;
+  width: 20%;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+}
+.footerTools ul li .logo {
+  position: absolute;
+  bottom: 0px;
+  top: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+}
+.footerTools .texts {
+  display: flex;
+  padding: 11px 16px;
+  height: 50px;
+  background: #fff;
+}
+.footerTools .texts input {
+  border-radius: 50px;
+  height: 28px;
+  background: #e6e6e6;
+}
+.footerTools .texts .icon {
+  flex: 60px 0 0 ;
+  margin-left: 10px;
+}
+.wrapper {
+  bottom: 44px;
+}
+.wrapper .mui-pull-top-pocket {
+  top: 50px;
+}
+#wrapper {
+  position: relative;
+  z-index: 999;
+  height: 50px;
+  background: #fff;
+  width: 100%;
+  overflow: hidden;
+  -ms-touch-action: none;
+}
+#wrapper .topList {
+  margin-bottom: 0;
+  position: absolute;
+  z-index: 999;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  height: 50px;
+}
+#wrapper .topList li {
+  float: left;
+  padding: 15px 16px 0 16px;
+  font-size: 14px;
+}
+#wrapper .topList li.active {
+  color: #916923;
+}
+#slider {
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-top: 50px;
+  border-radius: 10px;
+}
+.list {
+  margin-bottom: 0;
+  padding: 8px 16px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  -moz-column-count: 2;
+  /* Firefox */
+  -webkit-column-count: 2;
+  /* Safari 和 Chrome */
+  column-count: 2;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em;
+  column-gap: 1em;
+}
+.list li {
+  padding: 8px 0;
+  text-align: center;
+  float: left;
+  width: 100%;
+  display: inline-block;
+  -moz-page-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  break-inside: avoid;
+}
+.list li img {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  width: 100%;
+}
+.follow {
+  position: fixed;
+  bottom: 56px;
+  right: 20px;
+  z-index: 100;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  color: #ff4e53;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  font-weight: 700;
+  background: rgba(200, 200, 200, 0.7);
+}
+.searches .search-input {
+  font-size: 14px;
+  background: #fff;
+  display: flex;
+  padding: 10px 16px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.searches .search-input > span {
+  padding-left: 16px;
+}
+.searches .search-input .border {
+  border-radius: 20px;
+  height: 20px;
+  line-height: 20px;
+  flex: 1;
+  margin-bottom: 0;
+  padding: 5px 10px;
+  background: rgba(0, 0, 0, 0.15);
+  display: flex;
+}
+.searches .search-input .border input {
+  flex: 1;
+  color: #000;
+  line-height: 20px;
+  height: 20px;
+  border: 0;
+  padding: 2px 0;
+  font-size: 14px;
+  margin: 0;
+  background: none;
+}
+.searches .search-input .border > i {
+  flex: 25px 0 0 ;
+  padding-left: 10px;
+}
+.searches .search-input .border .bugs {
+  color: rgba(0, 0, 0, 0.5);
+  flex: 40px 0 0;
+  padding-top: 2px;
+  padding-right: 5px;
+}
+.searches .search-input .border .bugs::before {
+  content: '|';
+  font-size: 16px;
+  padding-right: 5px;
+}
+.searches .history > p,
+.searches .hot > p {
+  padding: 10px 16px;
+  background: #fff;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.searches .history .group,
+.searches .hot .group {
+  margin-bottom: 0;
+  display: flex;
+  padding: 10px 16px;
+  flex-wrap: wrap;
+}
+.searches .history .group li,
+.searches .hot .group li {
+  border-radius: 7px;
+  margin: 4px 6px;
+  background: #dadada;
+  color: #4b4b4b;
+  padding: 9px 18px;
+}

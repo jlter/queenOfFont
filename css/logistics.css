@@ -1,0 +1,134 @@
+@import "../css/calc.css";
+.wrapper {
+  background: #fff;
+}
+ul {
+  margin-top: 0;
+  padding-left: 0;
+}
+ul li {
+  list-style: none;
+}
+i.queen {
+  width: 24px;
+  height: 24px;
+  font-size: 20px;
+  display: inline-block;
+  line-height: 24px;
+  text-align: center;
+}
+i.queen.big {
+  line-height: 30px;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+}
+i.queen.queen-webicon19 {
+  color: #ccc;
+}
+i.queen.queen-webicon19.active {
+  color: #ff4e53;
+}
+html,
+body {
+  font-family: "microsoft yahei";
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.mui-popup-button {
+  color: #916923 !important;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.timeLine {
+  margin: 0 0 0 30px;
+  padding-left: 30px;
+  border-left: 1px solid #d9d9d9;
+}
+.timeLine .item {
+  font-size: 0;
+  position: relative;
+  border-bottom: 1px solid #d9d9d9;
+}
+.timeLine .item:first-of-type {
+  color: #916923;
+}
+.timeLine .item:first-of-type .point {
+  background: #916923;
+  padding: 5px;
+  left: -37px;
+  width: 14px;
+  height: 14px;
+}
+.timeLine .item:first-of-type .point > i {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  border-radius: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #916923;
+}
+.timeLine .item span {
+  font-size: 16px;
+  line-height: 2;
+}
+.timeLine .item span.time {
+  display: block;
+  font-size: 12px;
+}
+.timeLine .item .point {
+  position: absolute;
+  top: 40%;
+  left: -35px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  padding: 1px;
+  background: #d9d9d9;
+}
+.wrapper {
+  background: #fff;
+  font-size: 14px;
+}
+.wrapper .content {
+  background: #f2f0da;
+}
+.wrapper .content .title {
+  background: #fff;
+  padding: 10px 16px;
+  display: flex;
+  margin-bottom: 10px;
+}
+.wrapper .content .title img {
+  flex: 80px 0 0 ;
+  height: 80px;
+}
+.wrapper .content .title .title-text {
+  flex: 1;
+  padding-left: 16px;
+  font-size: 12px;
+}
+.wrapper .content .title .title-text li {
+  display: flex;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.wrapper .content .title .title-text li span {
+  flex: 75px 0 0;
+}
+.wrapper .content .title .title-text li.types {
+  font-size: 16px;
+  color: #916923;
+}
+.wrapper .content .title .title-text li.types > span {
+  color: #000;
+}
+.wrapper .content .commons {
+  padding: 10px 0;
+  background: #fff;
+}

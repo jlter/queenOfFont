@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我是女王</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/mui.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body onload="loader()">
+	<div id="wrapper">
+		<ul class="topList" id="topList">
+			<li class="active">首页</li>
+			<li>美丽人生</li>
+			<li>快乐主妇</li>
+			<li>回归自然</li>
+			<li>母婴穿搭</li>
+		</ul>
+	</div>
+		<div class="mui-scroll-wrapper wrapper">
+
+			<div class='mui-scroll'>
+
+                <div id="slider" class="mui-slider" >
+                    <div class="mui-slider-group mui-slider-loop">
+                        <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+                        <div class="mui-slider-item mui-slider-item-duplicate">
+                            <a href="#">
+                                <img src="./images/personDefault.png">
+                            </a>
+                        </div>
+                        <!-- 第一张 -->
+                        <div class="mui-slider-item">
+                            <a href="#">
+                                <img src="./images/personDefault.png">
+                            </a>
+                        </div>
+                        <!-- 第二张 -->
+                        <div class="mui-slider-item">
+                            <a href="#">
+                                <img src="./images/personDefault.png">
+                            </a>
+                        </div>
+                        <!-- 第三张 -->
+                        <div class="mui-slider-item">
+                            <a href="#">
+                                <img src="./images/personDefault.png">
+                            </a>
+                        </div>
+                        <!-- 第四张 -->
+                        <div class="mui-slider-item">
+                            <a href="#">
+                                <img src="./images/personDefault.png">
+                            </a>
+                        </div>
+                        <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+                        <div class="mui-slider-item mui-slider-item-duplicate">
+                            <a href="#">
+                                <img src="./images/personDefault.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mui-slider-indicator">
+                        <div class="mui-indicator mui-active"></div>
+                        <div class="mui-indicator"></div>
+                        <div class="mui-indicator"></div>
+                        <div class="mui-indicator"></div>
+                    </div>
+                </div>
+				<ul class="list">
+					<li><img src="images/indexDemo/pic1.png"/></li>
+					<li><img src="images/indexDemo/pic2.png"/></li>
+					<li><img src="images/indexDemo/pic3.png"/></li>
+					<li><img src="images/indexDemo/pic6.png"/></li>
+					<li><img src="images/indexDemo/pic1.png"/></li>
+					<li><img src="images/indexDemo/pic2.png"/></li>
+					<li><img src="images/indexDemo/pic4.png"/></li>
+					<li><img src="images/indexDemo/pic5.png"/></li>
+					<li><img src="images/indexDemo/pic3.png"/></li>
+					<li><img src="images/indexDemo/pic4.png"/></li>
+					<li><img src="images/indexDemo/pic5.png"/></li>
+					
+				</ul>
+			</div>
+			
+		</div>
+		<!--底部 footer-->
+			<div class="mui-bar mui-bar-footer footerTools">
+				<ul>
+					<li><img src="icon/toolsIcon/indexActor.png"/></li>
+					<li class="search"><img src="icon/toolsIcon/search.png"/></li>
+					<li><img class="logo" src="icon/toolsIcon/logo.png" alt=""></li>
+					<li onclick="window.location.href='./html/buyCar.html'"><img src="icon/toolsIcon/car.png"/></li>
+					<li onclick="window.location.href='./html/person.html'"><img src="icon/toolsIcon/person.png"/></li>
+				</ul>
+			</div>
+			<!--关注定位点-->
+			<div class="follow">
+				关注
+			</div>
+		<!--search寻找-->
+		<div class="searchesOut">
+			<div class="searches">
+				<div class="search-input">
+					<div class="border">
+						<i class="mui-icon mui-icon-search"></i>
+						<span class="bugs">搜索</span>
+						<input type="text" class="search-input-text">
+					</div>
+					<span class="cancels">取消</span>
+					<span class="back">退出搜索</span>
+				</div>
+				<div class="history">
+
+					<p><span>历史记录</span><i class="mui-icon mui-icon-trash"></i></p>
+
+					<ul class="group">
+						<li class="items">雨伞</li>
+						<li class="items">T恤</li>
+						<li class="items">小米6手机</li>
+						<li class="items">三星s8</li>
+						<li class="items">刀</li>
+					</ul>
+				</div>
+				<div class="hot">
+					<p><span>热门搜索</span><i class="mui-icon mui-icon-trash"></i></p>
+					<ul class="group">
+						<li class="items">雨伞</li>
+						<li class="items">T恤</li>
+						<li class="items">小米6手机</li>
+						<li class="items">三星s8</li>
+						<li class="items">刀</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		<script src="js/iscroll.js"></script>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./lib/layer.js"></script>
+	<script src="js/jquery-3.2.0.min.js"></script>
+		<script>
+			var myscroll = ''
+			var topListWidth = 0
+			function loader() {
+				myscroll = new IScroll('#wrapper',{
+				    eventPassthrough:true,
+					scrollX:true,
+					scrollY:false,
+					preventDefault:false
+				})
+
+            }
+            for(var i = 0;i<topList.children.length;i++){
+                topListWidth+=topList.children[i].clientWidth
+            }
+
+            $('#topList').width(topListWidth)
+            console.log(topListWidth,topList.clientWidth)
+
+
+            mui.init({
+                swipeBack:true //启用右滑关闭功能
+            });
+            var slider = mui("#slider");
+            slider.slider({
+                interval:5000
+            })
+                var html = document.querySelector('.searchesOut').innerHTML
+                mui('body')
+					.on('tap','.search',function () {
+                    layer.open({
+                        type:1
+                        ,content: html
+                        ,anim: 'scale'
+						,shade:'background-color:rgba(0,0,0,0.4)'
+                        ,style: 'position:fixed; top:0; left:0; width: 100%; padding:0; border:none;background:none;'
+                    });
+                })
+					.on('tap','.back',function () {
+                        layer.closeAll()
+                    })
+					.on('keydown','.search-input-text',function (e) {
+						if(e.keyCode ===13 ){
+						   alert('已经回车,进行搜索:'+this.value)
+						}
+                    })
+					.on('tap','#topList li',function () {
+						$(this).addClass('active').siblings().removeClass('active')
+                    })
+		</script>
+	</body>
+</html>
