@@ -1,0 +1,74 @@
+@import "../css/calc.css";
+.wrapper {
+  background: #fff;
+}
+ul {
+  margin-top: 0;
+  padding-left: 0;
+}
+ul li {
+  list-style: none;
+}
+i.queen {
+  width: 24px;
+  height: 24px;
+  font-size: 20px;
+  display: inline-block;
+  line-height: 24px;
+  text-align: center;
+}
+i.queen.big {
+  line-height: 30px;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+}
+i.queen.queen-webicon19 {
+  color: #ccc;
+}
+i.queen.queen-webicon19.active {
+  color: #ff4e53;
+}
+html,
+body {
+  font-family: "microsoft yahei";
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.mui-popup-button {
+  color: #916923 !important;
+}
+.wrapper {
+  font-size: 14px;
+  background: #f2f0da;
+}
+.wrapper .mui-input-group .mui-input-row label {
+  width: 25%;
+}
+.wrapper .mui-input-group .mui-input-row input {
+  font-size: 14px;
+  width: 75%;
+}
+.wrapper .mui-input-group .textarea {
+  font-size: 14px;
+}
+.wrapper .mui-input-group .defaults {
+  text-align: center;
+  color: #333333;
+  font-size: 16px;
+  padding: 15px 0;
+  border-top: 1px solid #f2f0da;
+}
+.wrapper .checkBtn {
+  font-size: 16px;
+  background: #916923;
+  margin: 0 auto;
+  min-width: 100px;
+  width: 35%;
+  text-align: center;
+  color: #fff;
+  border-radius: 100px;
+  padding: 10px 20px;
+  letter-spacing: 5px;
+}
