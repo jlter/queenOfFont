@@ -1,3 +1,6 @@
+var QUEEN = '我是女王';
+var btnGroup = ['取消','确定']
+
 mui('body')
     //链接
     .on('tap','.linkAllOrders',function () {
@@ -14,6 +17,10 @@ mui('body')
     })
     .on('tap','.linkLoadingPay',function () {
         window.location.href='./loadingPay.html'
+    })
+    //进入购物车
+    .on('tap','.linkBuyCar',function () {
+        window.location.href='./buyCar.html'
     })
     //退款
     .on('tap','.linkBackMoney',function () {
@@ -70,18 +77,14 @@ mui('body')
         mui.toast('正在建设中,敬请期待','我是女王')
     })
 
-
-
-
-
-    //动效
+    //动效===================================================================
         //点击提醒发货
     .on('tap','.actSendGoods',function () {
-        mui.confirm('已通知到客服小姐姐啦~','我是女王',['确定'])
+        mui.confirm('已通知到客服小姐姐啦~',QUEEN,['确定'])
     })
-        //点击取消订单
+    //点击取消订单
     .on('tap','.actCancelOrder',function () {
-        mui.confirm('确认删除订单？', '我是女王', ['取消','确定'], function(e) {
+        mui.confirm('确认删除订单？', QUEEN, btnGroup, function(e) {
             if (e.index == 1) {
                 mui.toast('商品已删除')
             } else {
@@ -89,7 +92,7 @@ mui('body')
             }
         })
     })
-        //点击确认收货
+    //点击确认收货
     .on('tap','.actCheckGoods',function () {
         mui.confirm('确定收到宝贝了嘛？', '我是女王', ['取消','确定'], function(e) {
             if (e.index == 1) {
@@ -113,8 +116,7 @@ mui('body')
             }
         })
     })
-
-        //点击提醒客服（退款处理中）
+    //点击提醒客服（退款处理中）
     .on('tap','.actTipServices',function () {
         mui.confirm('客服MM你们管管我哇？', '我是女王', ['取消','确定'], function(e) {
             if (e.index == 1) {
@@ -124,4 +126,28 @@ mui('body')
             }
         })
     })
+    //新增地址
+    .on('tap','.actAddAddress',function(){
+        mui.confirm('新增地址成功~','我是女王',['确定'])
+    })
+    //选择默认地址行为
+    .on('tap','.actDefaultAddress',function () {
+        mui.confirm('确认定义为默认地址吗？',QUEEN,btnGroup,function (e) {
+            if(e.index === 1){
+                $('.actDefaultAddress').addClass('trueDefaults').removeClass('actDefaultAddress')
+                mui.toast('修改默认地址')
+            }
+        })
+
+    })
+    //点击商品详情，添加到购物车
+    .on('tap','.actAddCar',function () {
+        layer.closeAll()
+        mui.confirm('添加购物车成功,是否移步到购物车查看？',QUEEN,btnGroup,function (e) {
+            if(e.index ===1){
+                window.location.href='../html/buyCar.html'
+            }
+        })
+    })
+
 

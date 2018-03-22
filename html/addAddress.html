@@ -28,9 +28,9 @@
                     </div>
 
                     <textarea class="textarea" rows="5" placeholder="详细地址"></textarea>
-                    <p class="defaults">设为默认地址</p>
+                    <p class="defaults actDefaultAddress ">设为默认地址</p>
                 </form>
-                <div class="btn checkBtn">保存</div>
+                <div class="btn checkBtn actAddAddress">保存</div>
 
             </div>
         </div>
@@ -39,16 +39,22 @@
     <script src="../lib/mui.picker.min.js"></script>
     <script src="../lib/mui.poppicker.js"></script>
     <script src="../lib/city.data-3.js"></script>
+    <script src="../js/jquery-3.2.0.min.js"></script>
     <script src="../js/base.js"></script>
     <script src="../js/linkAttr.js"></script>
     <script src="../js/notPullTop.js"></script>
-    <script src="../js/jquery-3.2.0.min.js"></script>
+
     <script>
         var picker = new mui.PopPicker({
             layer:3
         })
         picker.setData(cityData3)
+        //修改弹窗picker的颜色
         mui('body').on('tap','.showPick',function () {
+            $('.mui-poppicker-btn-ok').css({
+                'background': '#916923',
+                'border-color':'#916923'
+            })
             picker.show(function (e) {
                 $('.showPick').find('input').val(e[0].text +'-'+e[1].text+'-'+e[2].text)
             })

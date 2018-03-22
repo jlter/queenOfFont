@@ -1,4 +1,5 @@
 @import "../css/calc.css";
+@import "//at.alicdn.com/t/font_588833_guqdseanbh3vunmi.css";
 .wrapper {
   background: #fff;
 }
@@ -102,10 +103,10 @@ body {
 .wrapper {
   background: #f2f0da;
 }
-.wrapper .goodsSlider {
+.wrapper .content .goodsSlider {
   width: 100%!important;
 }
-.wrapper .goodsTitle {
+.wrapper .content .goodsTitle {
   padding: 0 16px;
   font-size: 16px;
   font-weight: bold;
@@ -114,7 +115,7 @@ body {
   line-height: 3;
   margin-bottom: 1px;
 }
-.wrapper .prices .realPrice {
+.wrapper .content .prices .realPrice {
   padding: 0 16px;
   background: #fff;
   display: block;
@@ -124,82 +125,82 @@ body {
   line-height: 2.5;
   margin-bottom: 1px;
 }
-.wrapper .prices .realPrice::before {
+.wrapper .content .prices .realPrice::before {
   content: '￥';
 }
-.wrapper .prices .otherGroup {
+.wrapper .content .prices .otherGroup {
   padding: 0 16px;
   background: #fff;
   overflow: hidden;
 }
-.wrapper .prices .otherGroup span {
+.wrapper .content .prices .otherGroup span {
   display: inline-block;
   line-height: 2;
   width: 50%;
   float: left;
   font-size: 12px;
-  color: #d9d9d9;
+  color: #888888;
 }
-.wrapper .types,
-.wrapper .props {
+.wrapper .content .types,
+.wrapper .content .props {
   line-height: 2.5;
   padding: 0 16px;
   background: #fff;
   font-size: 14px;
   margin-top: 10px;
 }
-.wrapper .desc {
+.wrapper .content .desc {
   margin-top: 10px;
   background: #fff;
   padding: 16px;
   font-size: 14px;
 }
-.wrapper .desc::before {
+.wrapper .content .desc::before {
   content: '简介：';
   display: block;
 }
-.wrapper .mini-comments {
+.wrapper .content .mini-comments {
   margin-top: 10px;
   background: #fff;
   margin-bottom: 0;
   padding: 5px 16px;
 }
-.wrapper .mini-comments .head {
+.wrapper .content .mini-comments .head {
   font-size: 14px;
   width: 100%;
   display: block;
 }
-.wrapper .mini-comments .checkAll {
+.wrapper .content .mini-comments .checkAll {
   color: #916923;
 }
-.wrapper .comment-group {
+.wrapper .content .comment-group {
   margin-bottom: 0;
 }
-.wrapper .outerQ {
+.wrapper .content .outerQ {
   text-align: center;
   background: #fff;
   margin-bottom: 10px;
 }
-.wrapper .outerQ .questionGroup {
+.wrapper .content .outerQ .questionGroup {
   margin-bottom: 0;
 }
-.wrapper .outerQ .questionGroup .questionItems {
+.wrapper .content .outerQ .questionGroup .questionItems {
   padding: 5px 16px;
   display: flex;
   justify-content: space-between;
   font-size: 14px;
 }
-.wrapper .outerQ .questionGroup .questionItems span:first-of-type {
+.wrapper .content .outerQ .questionGroup .questionItems span:first-of-type {
   line-height: 24px;
 }
-.wrapper .outerQ .questionGroup .questionItems span:first-of-type img {
+.wrapper .content .outerQ .questionGroup .questionItems span:first-of-type img {
   float: left;
   margin-right: 5px;
 }
-.wrapper .outerQ .questionGroup .questionItems span:last-of-type {
+.wrapper .content .outerQ .questionGroup .questionItems span:last-of-type {
   color: rgba(0, 0, 0, 0.5);
 }
-.wrapper .outerQ .allQuestions {
+.wrapper .content .outerQ .allQuestions {
   display: inline-block;
   padding: 3px 20px;
   font-size: 14px;
@@ -214,5 +215,137 @@ body {
   width: 100%;
 }
 .wrapper .goodsDesc-box img {
+  width: 100%;
+}
+.wrapper .hideBox {
+  display: none;
+}
+.typesBox .title {
+  color: #333333;
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 16px 0;
+  padding-bottom: 16px;
+  font-size: 20px;
+  border-bottom: 1px solid #f2f0da;
+}
+.typesBox ul {
+  padding: 16px;
+}
+.typesBox ul li {
+  font-size: 14px;
+  margin-top: 15px ;
+  padding-bottom: 15px;
+  display: flex;
+  border-bottom: 1px solid #f2f0da;
+}
+.typesBox ul li:first-of-type {
+  margin-top: 0;
+}
+.typesBox ul li > span {
+  color: #888888;
+  flex: 80px 0 0 ;
+}
+.guigeBox {
+  padding: 16px;
+}
+.guigeBox .title {
+  position: relative;
+}
+.guigeBox .title > img {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.guigeBox .title .mains {
+  vertical-align: top;
+  height: 100%;
+  display: inline-block;
+  padding-left: 18px;
+}
+.guigeBox .title .mains > span {
+  display: block;
+  font-size: 16px;
+}
+.guigeBox .title .mains > span:first-of-type {
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.guigeBox .title .mains > span:first-of-type::before {
+  content: '￥';
+  color: #ff4e53;
+  font-size: 24px;
+  font-weight: bold;
+}
+.guigeBox .title i {
+  float: right;
+  top: 0;
+}
+.guigeBox .goodsTypes .goodsTypesGroup {
+  margin-bottom: 20px;
+}
+.guigeBox .goodsTypes .goodsTypesGroup li {
+  display: inline-block;
+  padding: 5px 25px;
+  font-size: 14px;
+  background: #d9d9d9;
+  border-radius: 5px;
+  opacity: 0.8;
+  margin: 10px;
+}
+.guigeBox .goodsTypes .goodsTypesGroup li.active {
+  color: #fff;
+  background: #916923;
+  transition: 0.4s all ease;
+}
+.guigeBox .payButtonsGroup {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.guigeBox .payButtonsGroup img {
+  width: 50%;
+  float: left;
+}
+.guigeBox > .nums {
+  display: flex;
+  justify-content: space-between;
+}
+.guigeBox > .nums .inputs {
+  background: #d9d9d9;
+}
+.guigeBox > .nums .inputs .goodsNum {
+  height: inherit;
+  padding: 0;
+  margin-bottom: 0;
+  width: 24px;
+  text-align: center;
+  display: inline-block;
+  line-height: 24px;
+  vertical-align: bottom;
+}
+.goodsDescFooter {
+  background: #fff;
+  position: fixed;
+  bottom: -4px;
+  width: 100%;
+  left: 0;
+  z-index: 8;
+}
+.goodsDescFooter ul {
+  display: flex;
+  margin-bottom: 0;
+}
+.goodsDescFooter ul > li {
+  float: left;
+  flex: 1;
+}
+.goodsDescFooter ul > li:first-of-type img {
+  width: 50%;
+  float: left;
+}
+.goodsDescFooter ul > li img {
   width: 100%;
 }

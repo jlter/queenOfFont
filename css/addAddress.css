@@ -1,4 +1,5 @@
 @import "../css/calc.css";
+@import "//at.alicdn.com/t/font_588833_guqdseanbh3vunmi.css";
 .wrapper {
   background: #fff;
 }
@@ -59,6 +60,11 @@ body {
   font-size: 16px;
   padding: 15px 0;
   border-top: 1px solid #f2f0da;
+}
+.wrapper .mui-input-group .defaults.trueDefaults {
+  background: #916923;
+  color: #fff;
+  transition: all 0.4s ease;
 }
 .wrapper .checkBtn {
   font-size: 16px;

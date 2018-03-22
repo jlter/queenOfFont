@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>什么什么禁忌之吻唇膏</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="../lib/layer.css">
     <link rel="stylesheet" href="../css/mui.min.css">
     <link rel="stylesheet" href="../css/goodsDesc.css">
 </head>
@@ -65,8 +66,8 @@
                        <span class="saleV">销量：2437</span>
                    </div>
                 </div>
-                <div class="types">选择：规格</div>
-                <div class="props">产品参数</div>
+                <div class="types actTypes">选择规格</div>
+                <div class="props actProps">产品参数</div>
                 <div class="desc">
                     说水水水水谁谁谁谁谁谁少时诵诗书是所所所所所所所所所所所所所所所所所所所所所所所所所所所
                 </div>
@@ -132,23 +133,131 @@
                     <span class="linkQA allQuestions">我要提问</span>
                 </div>
 
-                <!--详情了-->
+                <!--详情-->
                 <div class="goodsDesc-box">
                     <img src="../images/customServicesDemo/1515976502159.jpg" alt="">
                     <img src="../images/customServicesDemo/1515976502159.jpg" alt="">
                 </div>
+                <!--参数html盒子-->
+                <div class="hideBox hideBoxType">
+                    <div class="typesBox">
+                        <p class="title">
+                            <span>产品参数</span>
+                            <i class="queen queen-Close "></i>
+                        </p>
+                        <ul>
+                            <li><span>净含量</span>3.3g</li>
+                            <li><span>颜色分类</span>1 2 3 4 5 6 7 8 9 10</li>
+                            <li><span>规格类型</span>普装</li>
+                            <li><span>品牌</span>微加加</li>
+                            <li><span>系列</span>禁忌之吻漆光唇膏</li>
+                            <li><span>功效</span>一个口红有什么功效你心里没点逼数吗</li>
+                            <li><span>产地</span>法国</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--规格html盒子-->
+                <div class="hideBox hideGuige">
+                    <div class="guigeBox">
+                        <div class="title">
+                            <img src="../images/payDemo/goods-thumb.png" alt="" width="100" height="100">
+                            <div class="mains">
+                                <span class="price">299</span>
+                                <span class="goodsNames">什么什么禁忌之吻唇膏</span>
+                            </div>
+                            <i class="queen queen-Close"></i>
+                        </div>
+                        <div class="goodsTypes">
+                            <p>颜色分类</p>
+                            <ul class="goodsTypesGroup">
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                            </ul>
+                        </div>
+                        <!--购买数量-->
+                        <div class="nums">
+                            <span>购买数量</span>
+                            <div class="inputs">
+                                <i class="queen queen-jian actCut"></i>
+                                <input class="goodsNum" value="1" type="number" />
+                                <i class="mui-icon mui-icon-plusempty actAdd"></i>
+                            </div>
+                        </div>
+                        <!--购买按钮-->
+                        <div class="payButtonsGroup">
+                            <img src="../icon/toolsIcon/addCar.png" alt="加入清单" class="actAddCar">
+                            <img src="../icon/toolsIcon/enterBuy.png" alt="立即购买" class="linkDefaults">
+                        </div>
+                    </div>
+
+                </div>
             </div>
+        </div>
+        <div class="goodsDescFooter">
+            <ul>
+                <li>
+                    <img src="../icon/toolsIcon/kefu.png" class="linkDefaults" alt="">
+                    <img src="../icon/toolsIcon/goCar.png" class="linkBuyCar" alt="">
+                </li>
+                <li><img src="../icon/toolsIcon/addCarmini.png" class="actAddCar" alt=""></li>
+                <li><img src="../icon/toolsIcon/enterBuymini.png" class="linkDefaults" alt=""></li>
+            </ul>
         </div>
     </div>
     <script src="../js/mui.min.js"></script>
     <script src="../js/base.js"></script>
     <script src="../js/notPullTop.js"></script>
     <script src="../js/linkAttr.js"></script>
+    <script src="../lib/layer.js"></script>
+    <script src="../js/jquery-3.2.0.min.js"></script>
     <script>
+        //轮播图盒子
         var slider = mui('#slider')
-        slider.slider({
-            interval: 0
-        });
+        //参数详情
+        var propsDesc =$('.hideBoxType').html()
+        //规格详情
+        var typesDesc = $('.hideGuige').html()
+        slider.slider({interval: 0});
+        var nums = $('.goodsNum').val()
+        mui('body')
+            .on('tap','.actProps',function () {
+                layer.open({
+                    type:1
+                    ,content: propsDesc
+                    ,anim: 'up'
+                    ,shade:'background-color:rgba(0,0,0,0.4)'
+                    ,style: 'border-top-left-radius:10px;border-top-right-radius:10px;position:fixed; bottom:0; left:0; width: 100%;height:80vh; padding:0; border:none;background:#fff;'
+                });
+            })
+            .on('tap','.queen-Close',function () {
+                layer.closeAll()
+            })
+            .on('tap','.actTypes',function () {
+                layer.open({
+                    type:1
+                    ,content: typesDesc
+                    ,anim: 'up'
+                    ,shade:'background-color:rgba(0,0,0,0.4)'
+                    ,style: ';border-top-left-radius:10px;border-top-right-radius:10px;position:fixed; bottom:0; left:0; width: 100%;height:80vh; padding:0; border:none;background:#fff;'
+                });
+            })
+            .on('tap','.goodsTypesGroup li',function () {
+                $(this).addClass('active').siblings().removeClass('active')
+            })
+            .on('tap','.actCut',function () {
+                if(nums<2){
+                  return
+                }
+                $(this).siblings('.goodsNum').val(--nums)
+            })
+            .on('tap','.actAdd',function () {
+                $(this).siblings('.goodsNum').val(++nums)
+            })
     </script>
 </body>
 </html>
